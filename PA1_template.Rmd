@@ -64,7 +64,7 @@ print(g)
 
 -------------------------------------------------------------------------- 
 
-<div  id="s1">
+
 ### What is the average daily activity pattern?
   
 To find this we plot time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)  
@@ -86,7 +86,7 @@ g1<-ggplot(stepsperInterval,aes(x=interval,y=avg))+geom_line() +
 
 print(g1)
 ```
-</div>
+
 -------------------------------------------------------------------------- 
 
 ### Imputing missing Values  
@@ -101,7 +101,7 @@ NAs<-sum(is.na(activity$steps))
 Total number of missing values in dataset are  :`r NAs`  
 
 We will fill missing values with median of steps per interval.  
-Mean steps for each Interval are present in ***'stepsperInterval'*** variable calculated in [section](#s1)  
+Mean steps for each Interval are present in ***'stepsperInterval'*** variable calculated in previous section.  
   
 ```{r imputedata}
 

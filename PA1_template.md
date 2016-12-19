@@ -60,7 +60,7 @@ print(g)
 
 -------------------------------------------------------------------------- 
 
-<div  id="s1">
+
 ### What is the average daily activity pattern?
   
 To find this we plot time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)  
@@ -85,7 +85,7 @@ print(g1)
 ```
 
 ![](PA1_template_files/figure-html/averagesteps-1.png)<!-- -->
-</div>
+
 -------------------------------------------------------------------------- 
 
 ### Imputing missing Values  
@@ -100,7 +100,7 @@ NAs<-sum(is.na(activity$steps))
 Total number of missing values in dataset are  :2304  
 
 We will fill missing values with median of steps per interval.  
-Mean steps for each Interval are present in ***'stepsperInterval'*** variable calculated in [section](#s1)  
+Mean steps for each Interval are present in ***'stepsperInterval'*** variable calculated in previous section.  
   
 
 ```r
